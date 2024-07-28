@@ -5,5 +5,9 @@
     
     ./treesitter.nix
     ./lsp.nix
+
+    ./extra.nix
   ];
+
+
 }
