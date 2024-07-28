@@ -63,6 +63,9 @@
       backup = false;
       undofile = true;
       undolevels = 10000;
+
+      # fold (other options are handled by tree-sitter)
+      foldlevel = 9999;
     };
   };
 }
