@@ -21,6 +21,21 @@
       enable = true;
       disableAutoInitialization = true;
     };
+
+    # Make `%` work with HTML tags, if-end blocks, etc
+    vim-matchup = {
+      enable = true;
+      treesitterIntegration.enable = true;
+
+      matchParen = {
+        deferred = {
+          enable = true;
+          showDelay = 50;
+          hideDelay = 300;
+        };
+        offscreen.method = "popup";
+      };
+    };
   };
 
   # Calculates `commentstring` only when needed
