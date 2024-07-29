@@ -14,5 +14,7 @@
     ./git.nix
     ./indent-lines.nix
     ./extra.nix
+
+    ./after.nix
   ];
 }
