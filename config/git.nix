@@ -1,5 +1,6 @@
-{
+{pkgs, ...}: {
   plugins = {
+    fugitive.enable = true;
     gitsigns = {
       enable = true;
       settings = {
@@ -9,4 +10,6 @@
       };
     };
   };
+
+  extraPlugins = with pkgs.vimPlugins; [vim-rhubarb];
 }
