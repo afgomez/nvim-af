@@ -9,6 +9,7 @@
     ./lsp.nix
     ./conform.nix
 
+    ./git.nix
     ./indent-lines.nix
     ./extra.nix
   ];
