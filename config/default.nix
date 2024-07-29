@@ -7,6 +7,7 @@
 
     ./treesitter.nix
     ./lsp.nix
+    ./conform.nix
 
     ./indent-lines.nix
     ./extra.nix
