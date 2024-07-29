@@ -8,6 +8,12 @@ in {
 
     lsp = {
       enable = true;
+      keymaps.lspBuf = {
+        "<F2>" = "rename";
+        "grn" = "rename";
+        "grr" = "references";
+        "gra" = "code_action";
+      };
       servers = {
         nixd.enable = true;
 
