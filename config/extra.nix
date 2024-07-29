@@ -1,4 +1,4 @@
-{ pkgs, ... } : {
+{pkgs, ...}: {
   plugins = {
     # Detect indentation
     guess-indent.enable = true;

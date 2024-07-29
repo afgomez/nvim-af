@@ -23,7 +23,7 @@
     };
   };
 
-  # Calcuulates `commentstring` only when needed
+  # Calculates `commentstring` only when needed
   extraConfigLua = ''
     local get_option = vim.filetype.get_option
     vim.filetype.get_option = function(filetype, option)

@@ -12,6 +12,4 @@
     ./indent-lines.nix
     ./extra.nix
   ];
-
-
 }
