@@ -8,6 +8,7 @@
     ./treesitter.nix
     ./lsp.nix
     ./conform.nix
+    ./completion.nix
 
     ./git.nix
     ./indent-lines.nix
