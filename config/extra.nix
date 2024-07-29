@@ -11,9 +11,6 @@
 
     # Surround
     surround.enable = true;
-
-    # Trim whitespace when saving
-    trim.enable = true;
   };
 
   extraPlugins = with pkgs.vimPlugins; [
