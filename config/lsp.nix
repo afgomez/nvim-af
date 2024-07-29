@@ -15,6 +15,7 @@ in {
         "gra" = "code_action";
       };
       servers = {
+        bashls.enable = true;
         nixd.enable = true;
 
         # Front-end development
@@ -42,6 +43,7 @@ in {
       };
     };
   };
+
   # UI
   diagnostics = {
     float = {
@@ -49,4 +51,10 @@ in {
       border = "rounded";
     };
   };
+
+  extraPackages = with pkgs; [
+    # For bashls
+    shellcheck
+    shfmt
+  ];
 }
