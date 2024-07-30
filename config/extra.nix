@@ -18,5 +18,12 @@
     vim-unimpaired
     # emacs-like movements in insert and command mode
     vim-rsi
+
+    # Icons everywhere
+    nvim-web-devicons
   ];
+
+  extraConfigLua = ''
+    require('nvim-web-devicons').setup()
+  '';
 }
