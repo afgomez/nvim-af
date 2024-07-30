@@ -5,10 +5,13 @@
       frecency.enable = true;
     };
 
-    settings.defaults.mappings = {
-      i = {
-        "<Esc>" = {
-          __raw = "require('telescope.actions').close";
+    settings.defaults = {
+      path_display = ["filename_first" "truncate"];
+      mappings = {
+        i = {
+          "<Esc>" = {
+            __raw = "require('telescope.actions').close";
+          };
         };
       };
     };
