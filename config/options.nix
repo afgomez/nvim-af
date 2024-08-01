@@ -66,6 +66,9 @@
 
       # fold (other options are handled by tree-sitter)
       foldlevel = 9999;
+
+      # Cursorhold events
+      updatetime = 350;
     };
   };
 }

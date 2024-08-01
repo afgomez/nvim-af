@@ -6,7 +6,8 @@
     ./autocmds.nix
 
     ./telescope.nix
-
+  
+    ./diagnostics.nix
     ./treesitter.nix
     ./lsp.nix
     ./conform.nix

@@ -45,12 +45,6 @@ in {
   };
 
   # UI
-  diagnostics = {
-    float = {
-      header = false;
-      border = "rounded";
-    };
-  };
 
   extraPackages = with pkgs; [
     # For bashls
