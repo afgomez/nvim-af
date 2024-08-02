@@ -37,6 +37,7 @@
           "CursorMoved",
           "CursorMovedI",
           "BufHidden",
+          "BufLeave",
           "InsertCharPre",
           "WinLeave",
         },
