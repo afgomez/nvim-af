@@ -27,5 +27,11 @@ in {
 
     # Diagnostics
     (setKeymap "n" "<leader>dl" "vim.diagnostic.setloclist" {desc = "Open diagnostics list";})
+
+    # Hide search highlight when pressing <ESC>
+    (setKeymap "n" "<Esc>" ":noh<CR><Esc>" {
+      noremap = true;
+      silent = true;
+    })
   ];
 }
