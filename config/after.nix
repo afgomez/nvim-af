@@ -1,5 +1,19 @@
 {
   extraFiles = {
+    "after/ftplugin/fugitive.vim".text = ''
+      augroup fugitivefiles
+        au!
+        autocmd BufWinEnter <buffer> wincmd K
+      augroup END
+    '';
+
+    "after/ftplugin/help.vim".text = ''
+      augroup helpfiles
+        au!
+        autocmd BufWinEnter <buffer> wincmd K
+      augroup END
+    '';
+
     "after/ftplugin/lua.lua".text = ''
       vim.opt_local.tabstop = 3
       vim.opt_local.shiftwidth = 3
