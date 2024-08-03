@@ -33,5 +33,8 @@ in {
       noremap = true;
       silent = true;
     })
+
+    # Global search
+    (setKeymap "n" "<leader>/" ":Grep!<Space>" {desc = "Find in project";})
   ];
 }
