@@ -68,5 +68,8 @@
 
     # Cursorhold events
     updatetime = 350;
+
+    grepprg = "rg --vimgrep --hidden";
+    grepformat = "%f:%l:%c:%m";
   };
 }
