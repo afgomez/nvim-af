@@ -1,7 +1,7 @@
 {pkgs, ...}: {
   plugins.conform-nvim = {
     enable = true;
-    formatOnSave.lspFallback = false;
+    formatOnSave.lspFallback = true;
     formattersByFt = {
       lua = ["stylua"];
       nix = ["alejandra"];
@@ -15,6 +15,8 @@
       "_" = ["trim_whitespace"];
     };
   };
+
+  opts.formatexpr = "v:lua.require'conform'.formatexpr()";
 
   extraPackages = with pkgs; [
     alejandra
