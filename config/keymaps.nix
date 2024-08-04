@@ -7,6 +7,15 @@ let
   };
 in {
   keymaps = [
+    # Don't try to move the cursor with <Space>
+    (setKeymap ["n" "v"] "<Space>" "<Nop>" {silent = true;})
+
+    # Don't open help
+    (setKeymap ["n" "i"] "<F1>" "<Nop>" {
+      noremap = true;
+      silent = true;
+    })
+
     # Remap `j` and `k` to work with wrapped lines
     (setKeymap "n" "k" "v:count == 0 ? 'gk' : 'k'" {
       silent = true;
