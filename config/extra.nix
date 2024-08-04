@@ -1,5 +1,8 @@
 {pkgs, ...}: {
   plugins = {
+    # Pretty UI elements
+    dressing.enable = true;
+
     # Detect indentation
     guess-indent.enable = true;
 
