@@ -1,16 +1,26 @@
-{pkgs, ...}: {
+{pkgs, ...}: let
+  prettier = ["prettierd" "prettier"];
+in {
   plugins.conform-nvim = {
     enable = true;
-    formatOnSave.lspFallback = true;
+    extraOptions = {
+      default_format_opts = {
+        lsp_format = "fallback";
+        stop_after_first = true;
+      };
+    };
+    formatOnSave.timeoutMs = 500;
     formattersByFt = {
       lua = ["stylua"];
       nix = ["alejandra"];
 
-      css = [["prettierd" "prettier"]];
-      html = [["prettierd" "prettier"]];
-      javascript = [["prettierd" "prettier"]];
-      typescript = [["prettierd" "prettier"]];
-      vue = [["prettierd" "prettier"]];
+      css = prettier;
+      html = prettier;
+      javascript = prettier;
+      typescript = prettier;
+      vue = prettier;
+      json = prettier;
+      jsonc = prettier;
 
       "_" = ["trim_whitespace"];
     };
