@@ -7,7 +7,7 @@
     ./commands.nix
 
     ./telescope.nix
-  
+
     ./diagnostics.nix
     ./treesitter.nix
     ./lsp.nix
@@ -18,6 +18,7 @@
     ./indent-lines.nix
     ./extra.nix
 
+    ./compiler.nix
     ./after.nix
   ];
 }

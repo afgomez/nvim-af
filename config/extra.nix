@@ -14,6 +14,9 @@
   };
 
   extraPlugins = with pkgs.vimPlugins; [
+    # Async make, task runner, etc
+    vim-dispatch
+
     # `[` `]` mappings
     vim-unimpaired
 
