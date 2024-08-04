@@ -9,6 +9,7 @@
     ./commands.nix
 
     ./telescope.nix
+    ./oil.nix
 
     ./diagnostics.nix
     ./treesitter.nix

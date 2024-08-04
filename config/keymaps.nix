@@ -45,5 +45,9 @@ in {
 
     # Global search
     (setKeymap "n" "<leader>/" ":Grep!<Space>" {desc = "Find in project";})
+
+    # Open parent folder with Oil
+    (setKeymap "n" "-" "<Cmd>Oil<CR>" {desc = "Open parent directory";})
+    (setKeymap "n" "_" "<Cmd>Oil .<CR>" {desc = "Open working directory";})
   ];
 }
