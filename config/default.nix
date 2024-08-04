@@ -1,6 +1,8 @@
 {
   # Import all your configuration modules here
   imports = [
+    ./performance.nix
+
     ./options.nix
     ./keymaps.nix
     ./autocmds.nix
