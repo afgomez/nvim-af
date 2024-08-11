@@ -18,6 +18,15 @@ in {
         bashls.enable = true;
         nixd.enable = true;
 
+        # Rust
+        rust-analyzer = {
+          enable = true;
+
+          # We install rust with rustup
+          installCargo = false;
+          installRustc = false;
+        };
+
         # Front-end development
         cssls.enable = true;
         eslint.enable = true;
