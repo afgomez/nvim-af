@@ -45,6 +45,7 @@
     cursorline = true; # Show active line
 
     cmdheight = 2; # Make the command line higher (shows longer notification messages)
+    showmode = false; # Don't show current mode (rely on lualine)
 
     scrolloff = 8; # Show some context when scrolling
 

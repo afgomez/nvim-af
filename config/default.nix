@@ -8,6 +8,7 @@
     ./autocmds.nix
     ./commands.nix
 
+    ./lualine.nix
     ./telescope.nix
     ./oil.nix
 
