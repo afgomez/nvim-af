@@ -3,26 +3,26 @@
 in {
   plugins.conform-nvim = {
     enable = true;
-    extraOptions = {
+    settings = {
       default_format_opts = {
         lsp_format = "fallback";
         stop_after_first = true;
       };
-    };
-    formatOnSave.timeoutMs = 500;
-    formattersByFt = {
-      lua = ["stylua"];
-      nix = ["alejandra"];
+      format_on_save.timeoutMs = 500;
+      formatters_by_ft = {
+        lua = ["stylua"];
+        nix = ["alejandra"];
 
-      css = prettier;
-      html = prettier;
-      javascript = prettier;
-      typescript = prettier;
-      vue = prettier;
-      json = prettier;
-      jsonc = prettier;
+        css = prettier;
+        html = prettier;
+        javascript = prettier;
+        typescript = prettier;
+        vue = prettier;
+        json = prettier;
+        jsonc = prettier;
 
-      "_" = ["trim_whitespace"];
+        "_" = ["trim_whitespace"];
+      };
     };
   };
 
