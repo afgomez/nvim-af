@@ -3,6 +3,9 @@
     # Pretty UI elements
     dressing.enable = true;
 
+    # autoclose lua/bash/ruby/etc
+    endwise.enable = true;
+
     # Detect indentation
     guess-indent.enable = true;
 
