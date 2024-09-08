@@ -9,9 +9,7 @@
       path_display = ["filename_first" "truncate"];
       mappings = {
         i = {
-          "<Esc>" = {
-            __raw = "require('telescope.actions').close";
-          };
+          "<Esc>".__raw = "require('telescope.actions').close";
         };
       };
     };

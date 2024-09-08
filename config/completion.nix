@@ -8,15 +8,13 @@
         {name = "path";}
         {name = "buffer";}
       ];
-      mapping = {
-        __raw = ''
-          cmp.mapping.preset.insert({
-            ['<C-Space>'] = cmp.mapping.complete(),
-            ['<CR>'] = cmp.mapping.confirm({ select = true }),
-            ['<Tab>'] = cmp.mapping.confirm({ select = true }),
-          })
-        '';
-      };
+      mapping.__raw = ''
+        cmp.mapping.preset.insert({
+          ['<C-Space>'] = cmp.mapping.complete(),
+          ['<CR>'] = cmp.mapping.confirm({ select = true }),
+          ['<Tab>'] = cmp.mapping.confirm({ select = true }),
+        })
+      '';
       # window = {
       #   completion.border = "rounded";
       #   documentation.border = "rounded";
@@ -32,11 +30,11 @@
     # Use nvim-cmp also in Command/Ex mode
     cmdline = {
       "/" = {
-        mapping = {__raw = "cmp.mapping.preset.cmdline()";};
+        mapping.__raw = "cmp.mapping.preset.cmdline()";
         sources = [{name = "buffer";}];
       };
       ":" = {
-        mapping = {__raw = "cmp.mapping.preset.cmdline()";};
+        mapping.__raw = "cmp.mapping.preset.cmdline()";
         sources = [
           {name = "path";}
           {
