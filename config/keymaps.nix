@@ -49,5 +49,18 @@ in {
     # Open parent folder with Oil
     (setKeymap "n" "-" "<Cmd>Oil<CR>" {desc = "Open parent directory";})
     (setKeymap "n" "_" "<Cmd>Oil .<CR>" {desc = "Open working directory";})
+
+    # Snippet navigation
+    (setKeymap ["i" "s"] "<Tab>" {
+      __raw = ''
+        function()
+          if vim.snippet.active({direction = 1}) then
+            return '<cmd>lua vim.snippet.jump(1)<cr>'
+          else
+            return '<Tab>'
+          end
+        end
+      '';
+    } {expr = true;})
   ];
 }
