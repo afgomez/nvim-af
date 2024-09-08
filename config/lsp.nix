@@ -15,8 +15,10 @@ in {
         "gra" = "code_action";
       };
       servers = {
+        # General
         bashls.enable = true;
         nixd.enable = true;
+        yamlls.enable = true;
 
         # Rust
         rust-analyzer = {
@@ -50,6 +52,12 @@ in {
         };
         volar.enable = true;
       };
+    };
+
+    schemastore = {
+      enable = true;
+      json.enable = true;
+      yaml.enable = true;
     };
   };
 
