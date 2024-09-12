@@ -43,6 +43,9 @@ in {
       silent = true;
     })
 
+    # Close buffer
+    (setKeymap "n" "<leader>w" ":Bdelete<CR>" {desc = "Close buffer";})
+
     # Global search
     (setKeymap "n" "<leader>/" ":Grep!<Space>" {desc = "Find in project";})
 

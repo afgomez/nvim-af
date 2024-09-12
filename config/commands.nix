@@ -6,5 +6,13 @@
       complete = "file";
       bang = true;
     };
+
+    BD = {
+      command = ":Bdelete";
+    };
+
+    BW = {
+      command = ":Bwipeout";
+    };
   };
 }

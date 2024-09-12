@@ -14,6 +14,9 @@
 
     # Insert closing character
     nvim-autopairs.enable = true;
+
+    # Keep window layout when closing buffers
+    bufdelete.enable = true;
   };
 
   extraPlugins = with pkgs.vimPlugins; [
