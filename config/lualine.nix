@@ -11,7 +11,7 @@
         lualine_x = ["filetype"];
       };
 
-      inactiveSections = {
+      inactive_sections = {
         lualine_c = [
           {__raw = ''{ "filename", path = 1 }'';}
         ];
