@@ -34,7 +34,7 @@ in {
         eslint.enable = true;
         html.enable = true;
         jsonls.enable = true;
-        tsserver = {
+        ts-ls = {
           enable = true;
           # Use vue-language-server hybrid mode
           filetypes = ["typescript" "javascript" "typescriptreact" "javascriptreact" "vue"];
