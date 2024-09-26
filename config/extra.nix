@@ -17,6 +17,9 @@
 
     # Keep window layout when closing buffers
     bufdelete.enable = true;
+
+    # Enable dev icons
+    web-devicons.enable = true;
   };
 
   extraPlugins = with pkgs.vimPlugins; [
@@ -31,9 +34,6 @@
 
     # Surround
     nvim-surround
-
-    # Icons everywhere
-    nvim-web-devicons
   ];
 
   extraConfigLua = ''
