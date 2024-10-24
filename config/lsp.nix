@@ -21,7 +21,7 @@ in {
         yamlls.enable = true;
 
         # Rust
-        rust-analyzer = {
+        rust_analyzer = {
           enable = true;
 
           # We install rust with rustup
@@ -34,7 +34,7 @@ in {
         eslint.enable = true;
         html.enable = true;
         jsonls.enable = true;
-        ts-ls = {
+        ts_ls = {
           enable = true;
           # Use vue-language-server hybrid mode
           filetypes = ["typescript" "javascript" "typescriptreact" "javascriptreact" "vue"];
