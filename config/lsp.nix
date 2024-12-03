@@ -10,9 +10,12 @@ in {
       enable = true;
       keymaps.lspBuf = {
         "<F2>" = "rename";
+        # TODO 0.11: remove
         "grn" = "rename";
         "grr" = "references";
         "gra" = "code_action";
+        "gri" = "implementation";
+        "g0" = "document_symbol";
       };
       servers = {
         # General
