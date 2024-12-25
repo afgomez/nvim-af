@@ -25,15 +25,15 @@
     # Make `%` work with HTML tags, if-end blocks, etc
     vim-matchup = {
       enable = true;
-      treesitterIntegration.enable = true;
+      treesitter.enable = true;
 
-      matchParen = {
-        deferred = {
-          enable = true;
-          showDelay = 50;
-          hideDelay = 300;
+      settings = {
+        matchparen_deferred_enable = true;
+        matchparen_deferred_hide_delay = 300;
+        matchparen_deferred_show_delay = 50;
+        matchparen_offscreen = {
+          method = "popup";
         };
-        offscreen.method = "popup";
       };
     };
   };
