@@ -23,6 +23,10 @@ in {
         nixd.enable = true;
         yamlls.enable = true;
 
+        # Ruby
+        ruby_lsp.enable = true;
+        # sorbet.enable = true;
+
         # Rust
         rust_analyzer = {
           enable = true;
